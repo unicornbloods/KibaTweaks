@@ -8,6 +8,7 @@ import com.google.common.base.CaseFormat;
 
 import cpw.mods.fml.common.registry.GameRegistry;
 import xyz.uniblood.kibatweaks.item.ItemDegradeable;
+import xyz.uniblood.kibatweaks.item.ItemSpawner;
 
 public class Items {
 
@@ -15,6 +16,7 @@ public class Items {
         for (int i = 0; i < degradableItemDurabilities.length; i++) {
             register(new ItemDegradeable(degradableItemDurabilities[i]), "itemDegradeable" + i);
         }
+        register(new ItemSpawner(), "itemSpawner");
     }
 
     private static void register(Item item, String name) {

@@ -15,6 +15,8 @@ public class KibaTweaksConfig {
 
     public static int[] degradableItemDurabilities = { 5, 15, 20, 30, 40 };
 
+    public static String[] spawnerItem = { "Zombie", "Thaumcraft.EldritchCrab" };
+
     public static void synchronizeConfiguration(File configFile) {
         Configuration configuration = new Configuration(configFile);
 
@@ -37,6 +39,9 @@ public class KibaTweaksConfig {
                 degradableItemDurabilities,
                 "Do not change this value")
             .getIntList();
+
+        spawnerItem = configuration
+            .getStringList("Spawner item spawns", categoryDeveloperOnly, spawnerItem, "Do not change this value");
 
         if (configuration.hasChanged()) {
             configuration.save();
