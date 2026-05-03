@@ -14,7 +14,7 @@ public class Items {
 
     public static void preInit() {
         for (int i = 0; i < degradableItemDurabilities.length; i++) {
-            register(new ItemDegradeable(degradableItemDurabilities[i]), "itemDegradeable" + i);
+            register(new ItemDegradeable(degradableItemDurabilities[i], i), "itemDegradeable" + i);
         }
         register(new ItemSpawner(), "itemSpawner");
     }

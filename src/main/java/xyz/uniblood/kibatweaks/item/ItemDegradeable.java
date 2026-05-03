@@ -11,17 +11,19 @@ import cpw.mods.fml.relauncher.SideOnly;
 public class ItemDegradeable extends Item {
 
     public IIcon[] icon = new IIcon[1];
+    private final int itemNumber;
 
-    public ItemDegradeable(int maxDamage) {
+    public ItemDegradeable(int maxDamage, int itemNumber) {
         setMaxDamage(maxDamage);
         isDamageable();
         setMaxStackSize(1);
         this.setHasSubtypes(true);
+        this.itemNumber = itemNumber;
     }
 
     @SideOnly(Side.CLIENT)
     public void registerIcons(IIconRegister ir) {
-        this.icon[0] = ir.registerIcon("kibatweaks:temp");
+        this.icon[0] = ir.registerIcon("kibatweaks:degradeable" + itemNumber);
     }
 
     @SideOnly(Side.CLIENT)
