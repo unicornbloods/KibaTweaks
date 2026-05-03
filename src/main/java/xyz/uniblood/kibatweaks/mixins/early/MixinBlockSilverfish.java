@@ -58,7 +58,7 @@ public class MixinBlockSilverfish extends Block {
         int z, int meta) {
 
         Random rand = new Random();
-        String entityName = silverfishSpawnerList[rand.nextInt(silverfishSpawnerList.length)];;
+        String entityName = silverfishSpawnerList[rand.nextInt(silverfishSpawnerList.length)];
 
         Entity customEntity = EntityList.createEntityByName(entityName, world);
 
