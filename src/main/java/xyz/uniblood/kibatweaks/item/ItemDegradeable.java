@@ -13,7 +13,6 @@ public class ItemDegradeable extends Item {
     public IIcon[] icon = new IIcon[1];
 
     public ItemDegradeable(int maxDamage) {
-        this.setHasSubtypes(true);
         setMaxDamage(maxDamage);
         isDamageable();
         setMaxStackSize(1);
