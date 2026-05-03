@@ -13,7 +13,7 @@ import cpw.mods.fml.common.event.FMLServerStartingEvent;
 @Mod(modid = KibaTweaks.MODID, version = Tags.VERSION, name = "KibaTweaks", acceptedMinecraftVersions = "[1.7.10]")
 public class KibaTweaks {
 
-    public static final String MODID = "mymodid";
+    public static final String MODID = "kibatweaks";
     public static final Logger LOG = LogManager.getLogger(MODID);
 
     @SidedProxy(clientSide = "xyz.uniblood.kibatweaks.ClientProxy", serverSide = "xyz.uniblood.kibatweaks.CommonProxy")
