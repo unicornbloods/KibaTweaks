@@ -1,5 +1,7 @@
 package xyz.uniblood.kibatweaks.mixinplugin;
 
+import static xyz.uniblood.kibatweaks.config.KibaTweaksConfig.stopPigmenLightningSpawn;
+
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
@@ -10,8 +12,6 @@ import com.gtnewhorizon.gtnhmixins.IEarlyMixinLoader;
 
 import cpw.mods.fml.relauncher.IFMLLoadingPlugin;
 import xyz.uniblood.kibatweaks.config.KibaTweaksConfig;
-
-import static xyz.uniblood.kibatweaks.config.KibaTweaksConfig.stopPigmenLightningSpawn;
 
 @IFMLLoadingPlugin.Name("KibaTweaksEarlyMixins")
 @IFMLLoadingPlugin.MCVersion("1.7.10")
