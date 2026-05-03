@@ -9,7 +9,7 @@ public class KibaTweaksConfig {
     static final String categoryEntities = "entities";
     static final String categoryDeveloperOnly = "developer only";
 
-    public static String[] silverfishSpawnerList = { "Zombie", "Thaumcraft.EldritchCrab", };
+    public static String[] silverfishSpawnerList = { "Zombie", "Thaumcraft.EldritchCrab" };
 
     public static boolean stopPigmenLightningSpawn = true;
 
