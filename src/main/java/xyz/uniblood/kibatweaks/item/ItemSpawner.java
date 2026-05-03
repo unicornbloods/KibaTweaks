@@ -29,6 +29,7 @@ public class ItemSpawner extends ItemMonsterPlacer {
 
     public ItemSpawner() {
         super();
+        setMaxStackSize(1);
         this.setHasSubtypes(true);
     }
 
